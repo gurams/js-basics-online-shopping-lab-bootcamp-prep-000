@@ -33,21 +33,21 @@ function viewCart() {
        let price = itemAndPrice[item];
      itemsAndPrices.push(`${item} at \$${price}`);
      }
- // switch(itemsAndPrices.length) {
- //    case 1:
- //      break;
- //    case 2:
- //      itemsAndPrices = itemsAndPrices.join(" and ");
- //      break;
- //    default:
- //      itemsAndPrices[l-1] = "and ".concat(itemsAndPrices[l-1]);
- //      itemsAndPrices = itemsAndPrices.join(", ");
- //  }
-// let l = itemsAndPrices.length
-  if (itemsAndPrices>1){
-    itemsAndPrices[l] = "and ".concat(itemsAndPrices[l]);
-    itemsAndPrices = itemsAndPrices.join(", ");
+ switch(itemsAndPrices.length) {
+    case 1:
+      break;
+    case 2:
+      itemsAndPrices = itemsAndPrices.join(" and ");
+      break;
+    default:
+      itemsAndPrices[l-1] = "and ".concat(itemsAndPrices[l-1]);
+      itemsAndPrices = itemsAndPrices.join(", ");
   }
+// let l = itemsAndPrices.length
+  // if (itemsAndPrices>1){
+  //   itemsAndPrices[l] = "and ".concat(itemsAndPrices[l]);
+  //   itemsAndPrices = itemsAndPrices.join(", ");
+  // }
 
   console.log(`In your cart, you have ${itemsAndPrices}.`);
 }
