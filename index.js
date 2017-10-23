@@ -23,7 +23,7 @@ function viewCart() {
    const l = cart.length;
   // write your code here  In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49
   if(!l){
-    return 'Your shopping cart is empty.'
+    return console.log('Your shopping cart is empty.')
   }
   //let l = itemsAndPrices.length
   var itemsAndPrices = [];
