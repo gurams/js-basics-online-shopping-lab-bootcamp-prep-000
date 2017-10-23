@@ -45,7 +45,7 @@ function viewCart() {
  //  }
 // let l = itemsAndPrices.length
   if (itemsAndPrices>1){
-    itemsAndPrices[l-1] = "and ".concat(itemsAndPrices[l-1]);
+    itemsAndPrices[l] = "and ".concat(itemsAndPrices[l]);
     itemsAndPrices = itemsAndPrices.join(", ");
   }
 
