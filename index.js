@@ -24,7 +24,7 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
   //let l = itemsAndPrices.length
-  var itemsandPrices = []
+  var itemsandPrices = [];
       for (let i=0; i<cart.length ; i++){
       let itemAndPrice = cart[i];
        let item = Object.keys(itemAndPrice)[0];
